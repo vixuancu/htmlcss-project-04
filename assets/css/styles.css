@@ -7,6 +7,11 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+  background-color: #fffaf5;
+}
+/* common */
+a {
+  text-decoration: none;
 }
 h1,
 h2,
@@ -22,4 +27,54 @@ select,
 button {
   font-size: inherit; /*kế thừa*/
   font-family: inherit;
+}
+.container {
+  width: 1170px;
+  max-width: calc(100%-48px);
+  margin: 0 auto; /*căn giữa*/
+}
+.btn {
+  --height: 56px;
+
+  display: inline-block; /*dùng đặt kích thước thẻ a*/
+  min-width: 130px;
+  height: var(--height);
+  line-height: var(--height);
+  border: 1px solid rgba(0, 9, 88, 0.7);
+  border-radius: 99px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000958;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.header {
+  padding: 26px 0;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__list {
+  display: flex;
+}
+.header-action__link,
+.navbar__link {
+  padding: 8px 18px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #5e6085;
+}
+.navbar__link:hover {
+  text-shadow: 0.7px 0 0 currentColor;
+  color: #000958;
+}
+.header-action__btn {
+  --height: 50px;
+  min-width: 118px;
+  height: var(--height);
 }
