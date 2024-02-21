@@ -251,11 +251,15 @@ button {
 }
 /* about */
 .about {
-  margin-top: 207px;
+  margin-top: 130px;
 }
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.about__media {
+  position: relative;
 }
 .about__lable {
   font-family: Sora, sans-serif;
@@ -302,4 +306,59 @@ button {
   top: 4px;
   left: 7px;
   content: url(../icons/check.svg);
+}
+.about__card {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  padding: 30px 26px;
+  width: 136px;
+  border-radius: 10px;
+  background-color: #5bd6e2;
+  box-shadow: -15px 26px 48px 0px #55f0ff2b;
+  text-align: center;
+}
+.about__card-title {
+  font-family: Sora, sans-serif;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+}
+.about__card-desc {
+  margin-top: 14px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #c6f4f9;
+}
+.about__card-decor {
+  position: absolute;
+  top: -39px;
+  right: -32px;
+}
+.about__img-wrap {
+  position: relative;
+  width: 494px;
+  margin-left: auto;
+}
+.about__img-wrap::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 336px;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+.about__img {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+.about__media-decor {
+  position: absolute;
+  top: 157px;
+  right: -50px;
+  z-index: -1;
 }
