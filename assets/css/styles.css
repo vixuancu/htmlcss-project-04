@@ -70,7 +70,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 4px 3px 10px -1px #bf290066;
 }
+.section__heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.19;
+  color: #000958;
+}
+.section__desc {
+  margin-top: 24px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.88;
+  color: #656689;
+}
+/* header */
 .header {
   padding: 26px 0;
 }
@@ -233,4 +248,58 @@ button {
   line-height: 1;
   color: #000958;
   text-decoration: underline;
+}
+/* about */
+.about {
+  margin-top: 207px;
+}
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about__lable {
+  font-family: Sora, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #5e6085;
+}
+.about__heading,
+.about__desc {
+  width: 444px;
+}
+.about__heading {
+  margin-top: 15px;
+}
+.about__checklist {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  gap: 36px;
+}
+.about__check-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #48496a;
+}
+.about__check-item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #ff5d31;
+  border: 2px solid #fff2e5;
+  border-radius: 4px;
+}
+.about__check-item::after {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  content: url(../icons/check.svg);
 }
