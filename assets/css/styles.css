@@ -518,10 +518,21 @@ button {
   padding: 30px 22px 30px 28px;
 }
 .service-item__heading {
+  position: relative;
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1;
   color: #000958;
+  padding-left: 10px;
+}
+.service-item__heading::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  border-radius: 1px;
+  background: linear-gradient(#ff5b2e, #ffa187);
 }
 .service-item__desc {
   margin-top: 18px;
