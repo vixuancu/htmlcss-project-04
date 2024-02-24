@@ -834,3 +834,40 @@ button {
 .pricing__container {
   max-width: 994px;
 }
+/* review */
+.review {
+  padding: 53px 0;
+}
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+.review__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /*căng ra */
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid #ffd1c4;
+  background: transparent;
+  color: #ff5b2e;
+}
+.review__control:hover {
+  color: #fff;
+  background: #ff5b2e;
+  border-color: #ff5b2e;
+  cursor: pointer;
+}
+.review-item {
+  display: flex;
+}
+.review-item__media {
+  width: 274px;
+  flex-shrink: 0;
+}
+.review-item__img {
+  width: 100%;
+}
