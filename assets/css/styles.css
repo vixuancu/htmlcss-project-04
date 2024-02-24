@@ -952,3 +952,28 @@ button {
   background: #ff5b2e;
   cursor: none;
 }
+/* blog */
+.blog {
+  padding: 78px 0;
+}
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__info {
+  width: 350px;
+  margin-right: 73px;
+}
+.blog__desc {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.blog__cta {
+  min-width: 182px;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  color: rgba(255, 91, 46, 1);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
