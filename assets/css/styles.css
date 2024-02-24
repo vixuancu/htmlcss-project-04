@@ -622,14 +622,14 @@ button {
   object-fit: cover;
   display: block;
   z-index: 1;
+  border-radius: inherit;
 }
 .staff-item__img-wrap {
   position: relative;
   margin: 0 16px;
   border-radius: 130px;
-  overflow: hidden;
 }
-.staff-item__img-wrap::after {
+.staff-item__img-wrap::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -638,6 +638,36 @@ button {
   background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
   bottom: 0;
   left: 0;
+}
+.staff-item__img-wrap::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* căn giữa đỉnh vl */
+}
+.staff-item:nth-child(1) .staff-item__img-wrap::after {
+  content: url(../img/staffdecor-01.svg);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::after {
+  content: url(../img/staffdecor-02.svg);
+  top: 14px;
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+.staff-item:nth-child(3) .staff-item__img-wrap::after {
+  content: url(../img/staffdecor-03.svg);
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::before {
+  background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+.staff-item:nth-child(4) .staff-item__img-wrap::after {
+  top: 14px;
+  content: url(../img/staffdecor-04.svg);
 }
 .staff-item__tile {
   margin-top: 34px;
