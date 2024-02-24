@@ -836,12 +836,18 @@ button {
 }
 /* review */
 .review {
-  padding: 53px 0;
+  padding: 104px 0 52px;
 }
 .review__inner {
   display: flex;
   align-items: center;
   /* column-gap: 44px; */
+}
+.review__list {
+  display: flex;
+}
+.review__content {
+  overflow: hidden;
 }
 .review__control {
   display: flex;
@@ -871,6 +877,8 @@ button {
   display: flex;
   align-items: center;
   column-gap: 115px;
+  width: 100%;
+  flex-shrink: 0;
 }
 .review-item__media {
   margin-top: -52px;
